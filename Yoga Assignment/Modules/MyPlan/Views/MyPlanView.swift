@@ -9,7 +9,41 @@ import SwiftUI
 
 struct MyPlanView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            
+            HStack {
+                Image(.planInfo)
+                
+                Spacer()
+                
+                VStack {
+                    Text("MY PLAN")
+                        .overlay(alignment: .bottom) {
+                            Rectangle()
+                                .frame(height: 1)
+                        }
+                    Text("CHAPTER 1")
+                    
+                    Text("Welcome Session")
+                }
+                
+                Spacer()
+            }
+            .padding()
+            
+            Spacer()
+            
+            SessionsScroller()
+            
+            Spacer()
+        }
+        .background {
+            Image(.chapter1BG)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea()
+        }
     }
 }
 
