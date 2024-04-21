@@ -21,6 +21,7 @@
 		87536B3E2BD51FD60074C273 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B3D2BD51FD60074C273 /* Session.swift */; };
 		87536B422BD5221D0074C273 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B412BD5221D0074C273 /* DataManager.swift */; };
 		87536B452BD546080074C273 /* sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 87536B442BD546080074C273 /* sessions.json */; };
+		87536B4C2BD54CF50074C273 /* KohinoorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B4B2BD54CF50074C273 /* KohinoorText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,10 @@
 		87536B3D2BD51FD60074C273 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		87536B412BD5221D0074C273 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		87536B442BD546080074C273 /* sessions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sessions.json; sourceTree = "<group>"; };
+		87536B472BD549990074C273 /* Kohinoor-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kohinoor-Medium.otf"; sourceTree = "<group>"; };
+		87536B482BD5499A0074C273 /* Kohinoor-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kohinoor-Book.otf"; sourceTree = "<group>"; };
+		87536B492BD54A380074C273 /* Yoga-Assignment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yoga-Assignment-Info.plist"; sourceTree = SOURCE_ROOT; };
+		87536B4B2BD54CF50074C273 /* KohinoorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KohinoorText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,9 @@
 		87536B0D2BD4FDF90074C273 /* Yoga Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				87536B4A2BD54CC80074C273 /* Views */,
+				87536B492BD54A380074C273 /* Yoga-Assignment-Info.plist */,
+				87536B462BD5498B0074C273 /* Fonts */,
 				87536B1F2BD4FF930074C273 /* Modules */,
 				87536B0E2BD4FDF90074C273 /* Yoga_AssignmentApp.swift */,
 				87536B122BD4FDFB0074C273 /* Assets.xcassets */,
@@ -201,6 +209,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		87536B462BD5498B0074C273 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				87536B482BD5499A0074C273 /* Kohinoor-Book.otf */,
+				87536B472BD549990074C273 /* Kohinoor-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		87536B4A2BD54CC80074C273 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87536B4B2BD54CF50074C273 /* KohinoorText.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +300,7 @@
 				87536B3E2BD51FD60074C273 /* Session.swift in Sources */,
 				87536B262BD501450074C273 /* LibraryView.swift in Sources */,
 				87536B2A2BD502E30074C273 /* MoreView.swift in Sources */,
+				87536B4C2BD54CF50074C273 /* KohinoorText.swift in Sources */,
 				87536B382BD519FA0074C273 /* SessionCard.swift in Sources */,
 				87536B242BD500360074C273 /* MyPlanView.swift in Sources */,
 				87536B112BD4FDF90074C273 /* MainView.swift in Sources */,
@@ -419,6 +445,7 @@
 				DEVELOPMENT_TEAM = D652685959;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yoga-Assignment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +475,7 @@
 				DEVELOPMENT_TEAM = D652685959;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yoga-Assignment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -49,7 +49,7 @@ struct SessionsScroller: View {
                                         .padding(.vertical, 10)
                                 }
                                 .overlay(alignment: .center) {
-                                    Text((i + 1).description)
+                                    KohinoorText((i + 1).description)
                                         .id(i)
                                         .frame(maxWidth: .infinity)
                                         .foregroundStyle(.white)

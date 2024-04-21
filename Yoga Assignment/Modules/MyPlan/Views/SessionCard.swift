@@ -14,7 +14,7 @@ struct SessionCard: View {
     
     var body: some View {
         VStack {
-            Text("Session \(i + 1)")
+            KohinoorText("Session \(i + 1)")
                 .frame(maxWidth: .infinity)
                 .overlay(alignment: .bottom) {
                     Rectangle()
@@ -28,25 +28,27 @@ struct SessionCard: View {
                 Spacer()
                 
                 Image(.sessionDuration)
-                Text("\(session.length) min")
+                KohinoorText("\(session.length) min")
                 
                 Spacer(minLength: 5)
                 
-                Text(session.difficulty.rawValue)
                 Image(session.difficulty.icon)
+                KohinoorText(session.difficulty.rawValue)
                 
                 Spacer()
             }
             
-            Text("\"\(session.quote)\"")
+            KohinoorText("\"\(session.quote)\"")
                 .multilineTextAlignment(.center)
+                .padding()
             
-            Text(session.quoteAuthor)
+            KohinoorText(session.quoteAuthor, size: 14)
+                .padding()
             
             Button {
                 //TODO: Show simple alert and check session
             } label: {
-                Text("Did it")
+                KohinoorText("Did it")
                     .foregroundStyle(.black)
                     .padding()
                     .padding(.horizontal, 30)
