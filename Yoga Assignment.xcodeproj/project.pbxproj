@@ -15,6 +15,7 @@
 		87536B262BD501450074C273 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B252BD501450074C273 /* LibraryView.swift */; };
 		87536B282BD502D90074C273 /* MilestonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B272BD502D90074C273 /* MilestonesView.swift */; };
 		87536B2A2BD502E30074C273 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B292BD502E30074C273 /* MoreView.swift */; };
+		87536B3E2BD51FD60074C273 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B3D2BD51FD60074C273 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		87536B252BD501450074C273 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		87536B272BD502D90074C273 /* MilestonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesView.swift; sourceTree = "<group>"; };
 		87536B292BD502E30074C273 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		87536B442BD546080074C273 /* sessions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sessions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		87536B2C2BD50E720074C273 /* MyPlan */ = {
 			isa = PBXGroup;
 			children = (
+				87536B432BD545F80074C273 /* Resources */,
 				87536B332BD50EDF0074C273 /* Views */,
 			);
 			path = MyPlan;
@@ -167,6 +170,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		87536B432BD545F80074C273 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87536B442BD546080074C273 /* sessions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87536B162BD4FDFB0074C273 /* Preview Assets.xcassets in Resources */,
+				87536B452BD546080074C273 /* sessions.json in Resources */,
 				87536B132BD4FDFB0074C273 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
