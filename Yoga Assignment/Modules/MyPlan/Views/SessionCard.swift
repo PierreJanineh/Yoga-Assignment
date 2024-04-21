@@ -32,8 +32,8 @@ struct SessionCard: View {
                 
                 Spacer(minLength: 5)
                 
-                Image(.intensity1)
                 Text(session.difficulty.rawValue)
+                Image(session.difficulty.icon)
                 
                 Spacer()
             }
