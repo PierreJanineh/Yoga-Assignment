@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MyPlanView: View {
+    
+    @State private var alertPresented = false
+    
     var body: some View {
         VStack {
             Spacer()
             
             HStack {
-                Image(.planInfo)
-                
                 Spacer()
                 
                 VStack {
@@ -31,6 +32,14 @@ struct MyPlanView: View {
                 Spacer()
             }
             .padding()
+            .overlay(alignment: .topLeading) {
+                Image(.planInfo)
+                    .padding()
+                    .onTapGesture {
+                        alertPresented.toggle()
+                    }
+            }
+            .alert("Title", isPresented: $alertPresented) { }
             
             Spacer(minLength: 100)
             
