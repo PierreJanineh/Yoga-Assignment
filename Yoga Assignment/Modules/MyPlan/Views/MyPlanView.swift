@@ -19,14 +19,16 @@ struct MyPlanView: View {
                 Spacer()
                 
                 VStack {
-                    KohinoorText("MY PLAN")
+                    KohinoorText("MY PLAN", medium: true)
                         .overlay(alignment: .bottom) {
                             Rectangle()
                                 .frame(height: 1)
                         }
-                    KohinoorText("CHAPTER 1")
                     
-                    KohinoorText("Welcome Session")
+                    KohinoorText("CHAPTER 1", size: 14)
+                        .padding(2)
+                    
+                    KohinoorText("Welcome Session", medium: true)
                 }
                 
                 Spacer()

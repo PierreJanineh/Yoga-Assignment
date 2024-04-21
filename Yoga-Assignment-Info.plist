@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Fonts/Kohinoor-Medium.ttf</string>
-		<string>Fonts/Kohinoor-Book.ttf</string>
+		<string>Fonts/Kohinoor-Medium.otf</string>
+		<string>Fonts/Kohinoor-Book.otf</string>
 	</array>
 </dict>
 </plist>

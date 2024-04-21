@@ -22,6 +22,8 @@
 		87536B422BD5221D0074C273 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B412BD5221D0074C273 /* DataManager.swift */; };
 		87536B452BD546080074C273 /* sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 87536B442BD546080074C273 /* sessions.json */; };
 		87536B4C2BD54CF50074C273 /* KohinoorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536B4B2BD54CF50074C273 /* KohinoorText.swift */; };
+		87536B4D2BD5530B0074C273 /* Kohinoor-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 87536B472BD549990074C273 /* Kohinoor-Medium.otf */; };
+		87536B4E2BD5530D0074C273 /* Kohinoor-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 87536B482BD5499A0074C273 /* Kohinoor-Book.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87536B162BD4FDFB0074C273 /* Preview Assets.xcassets in Resources */,
+				87536B4E2BD5530D0074C273 /* Kohinoor-Book.otf in Resources */,
+				87536B4D2BD5530B0074C273 /* Kohinoor-Medium.otf in Resources */,
 				87536B452BD546080074C273 /* sessions.json in Resources */,
 				87536B132BD4FDFB0074C273 /* Assets.xcassets in Resources */,
 			);
