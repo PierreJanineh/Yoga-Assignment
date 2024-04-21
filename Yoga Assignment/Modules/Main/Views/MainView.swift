@@ -11,6 +11,10 @@ struct MainView: View {
     
     @State private var selectedTab: Int = 0
     
+    init() {
+        UITabBar.appearance().backgroundColor = .white
+    }
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             MyPlanView()
@@ -86,4 +90,17 @@ extension MainView {
     static let LIBRARY = "Library"
     static let MILESTONES = "Milestones"
     static let MORE = "More"
+}
+
+extension UITabBarController {
+    open override func viewWillLayoutSubviews() {
+        guard let array = self.viewControllers else { return }
+        
+        for controller in array {
+            if controller == array.last {
+                return
+            }
+            controller.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+        }
+    }
 }
