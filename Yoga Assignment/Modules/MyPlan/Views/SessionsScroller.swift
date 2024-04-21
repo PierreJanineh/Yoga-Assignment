@@ -38,6 +38,8 @@ struct SessionsScroller: View {
                     .safeAreaPadding(.horizontal, 40)
                     .coordinateSpace(name: "scroll")
                     
+                    Spacer()
+                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 0) {
                             ForEach(sessions.indices, id: \.self) { i in

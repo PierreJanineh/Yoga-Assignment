@@ -32,11 +32,11 @@ struct MyPlanView: View {
             }
             .padding()
             
-            Spacer()
+            Spacer(minLength: 100)
             
             SessionsScroller()
             
-            Spacer()
+            Spacer(minLength: 50)
         }
         .background {
             Image(.chapter1BG)

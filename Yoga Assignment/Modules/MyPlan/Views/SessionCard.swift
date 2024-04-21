@@ -57,6 +57,7 @@ struct SessionCard: View {
                             .fill(.aqua)
                     }
             }
+            .padding()
         }
         .background {
             RoundedRectangle(cornerRadius: 15)
